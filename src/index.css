@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Questrial&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+input {
+    border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Cinzel";
+    font-weight: normal;
+}
+
