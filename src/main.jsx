@@ -1,14 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client'; // Importa desde react-dom/client
-import { BrowserRouter } from 'react-router-dom';
-import App from './App';
-import './Firebase/firebase'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
+import "./Firebase/firebase";
+import { UserProvider } from "./Context/UserContext";
 
-const root = ReactDOM.createRoot(document.getElementById('root')); // Usa createRoot
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <React.StrictMode>
-        <BrowserRouter>
-            <App />
-        </BrowserRouter>
-    </React.StrictMode>
+  <React.StrictMode>
+    <UserProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </UserProvider>
+  </React.StrictMode>
 );
