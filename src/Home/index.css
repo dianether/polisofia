@@ -2,6 +2,9 @@
     width: 100%;
     min-height: 100vh;
     background: #f2ebe2;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 } 
 
 header {
