@@ -1,8 +1,14 @@
-import { faCommentMedical, faHouse, faUserLarge } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import {
+  faCommentMedical,
+  faHouse,
+  faUserLarge,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import { useUser } from "../Context/UserContext";
 
 function Footer() {
+  const { needUser } = useUser();
   return (
     <footer>
       <div>
@@ -11,11 +17,11 @@ function Footer() {
       <div>
         ~<FontAwesomeIcon icon={faCommentMedical} />~
       </div>
-      <div>
+      <div onClick={() => needUser()}>
         ~<FontAwesomeIcon icon={faUserLarge} />~
       </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
