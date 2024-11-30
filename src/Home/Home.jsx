@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./index.css";
 import Footer from "./Footer";
 import Header from "./Header";
-import { createFB, readFB } from "../Firebase/api";
+import Rail from "../Components/Rail/Rail";
 
 function Home() {
+  const [page, setPage] = useState(window.location.pathname);
+
   return (
     <div className="home">
-      <Header />
+      <Header page={page} setPage={setPage} />
+      <Rail page={page} />
       {/* <div
         onClick={async () => {
           const guardar = await createFB(
