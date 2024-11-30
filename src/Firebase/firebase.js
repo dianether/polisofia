@@ -15,7 +15,10 @@ import {
     deleteDoc,
     addDoc,
     where,
-    onSnapshot
+    onSnapshot,
+    orderBy,
+    limit,
+    startAfter
 } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
@@ -46,6 +49,9 @@ export {
     addDoc,
     where,
     onSnapshot,
+    orderBy,
+    limit,
+    startAfter
 } from "firebase/firestore";
 
 export {

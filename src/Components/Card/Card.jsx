@@ -1,10 +1,13 @@
-import React from 'react'
-import './index.css'
+import React from "react";
+import "./index.css";
 
-function Card() {
+function Card({ data, index, mode }) {
   return (
-    <div className='card'>Card</div>
-  )
+    <div className="card">
+      {data.title}
+      {data.text}
+    </div>
+  );
 }
 
-export default Card
+export default Card;

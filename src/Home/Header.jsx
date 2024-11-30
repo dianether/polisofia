@@ -5,8 +5,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useUser } from "../Context/UserContext";
 
-function Header() {
-  const [page, setPage] = useState(window.location.pathname);
+function Header({ page, setPage }) {
   const navigate = useNavigate();
 
   const { needUser } = useUser();
